@@ -1,0 +1,42 @@
+.chart {
+  float:left;
+  width: 120px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+h1.temp {
+  margin-bottom: 30px;
+}
+
+.info {
+  width: 130px;
+  height: 90px;
+  float:right;
+  text-align: right;
+  font-size: 11px;
+  line-height: 12px;
+}
+
+#statedisplay h1 {
+  text-align: center;
+}
+
+#statedisplay {
+  height: 240px;
+  background-image: url('/img/ac_icon.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#statedisplay.on {
+  background-image: url('/img/ac_icon.png');
+}
+
+#statedisplay.off {
+  background-image: url('/img/ac_icon_off.png');
+}
+
+#statedisplay.disabled {
+  background-image: url('/img/ac_icon_disabled.png');
+}

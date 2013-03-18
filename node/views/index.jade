@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    .row
+      .span4
+        .well
+          #statedisplay.off
+            h1.temp #{temp}°C
+            .chart#temp(data-percent='#{temp}')
+              span#tempspan #{temp}°C
+            .info
+              p Cooling Temp:&nbsp;
+                span.max_temp 00
+                span °C
+              p Start Time:&nbsp;
+                span.start_time 00:00
+              p Stop Time:&nbsp;
+                span.stop_time 00:00
+              p Current Time:&nbsp;
+                span.current_time 00:00:00
+      .span8
+        .well
+          #timechart(style='width:570px;height:250px')
+    .row
+      .span12
+        .well
+          .setting
+            span Cooling temperature:
+            span.coolingtemp 00
+            span °C
+            .slider.medium.tempslider
+            .templist
+          .setting
+            span Cooling time:
+            span.starttime 00:00
+            span -
+            span.stoptime 00:00
+            .slider.medium.timeslider
